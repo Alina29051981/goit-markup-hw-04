@@ -63,7 +63,6 @@ a {
 .header-logo {
     padding: 24px 0;
     margin-right: 76px;
-    position: relative;
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -97,9 +96,9 @@ a {
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.nav-link.current {
+.ref {
     position: relative;
     text-decoration: none;
 }
@@ -177,7 +176,8 @@ a {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-      color: #fff;
+    background-color: #4d5ae5;
+    color: #fff;
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }    
 
@@ -272,6 +272,7 @@ a {
 }
 
 .subtitle-items {
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -302,7 +303,10 @@ a {
             flex-direction: row;
             margin-top: 8px;
          gap: 24px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks .link {
@@ -396,9 +400,7 @@ background-color: #404bbf;
 .overlay {
     padding: 8px;
 background-color: #4d5ae5;
-    font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
+   
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
@@ -411,23 +413,33 @@ background-color: #4d5ae5;
     transition: transform 250ms ease-in-out;
 }
 
+.imp {
+position: absolute;
+top: 0;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+padding: 40px 32px;
+background-color: #4d5ae5;
+height: 100%;
+width: 100%;
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 /*footer*/
 
 
-.page-footer{
+.page-footer {
     display: flex;
     padding: 100px 0px;
     background-color: #2e2f42;
 }
 
-.logo-text {
-    max-width: 264px;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
+.container-logo {
+    margin-right: 120px;
 }
 
 .footer-logo .logo-part {
@@ -439,10 +451,17 @@ background-color: #4d5ae5;
     margin-bottom: 16px;
 }
 
+.logo-text {
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
+
 .social {
     display: flex;
     align-items: baseline;
-    margin-left: 120px;
 }
 
 .soc {
