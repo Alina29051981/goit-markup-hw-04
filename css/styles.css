@@ -340,8 +340,8 @@ a {
     color: #2e2f42;
 }
 
-.social-list .link:hover,
-.social-list .link:focus{
+.link:hover,
+.link:focus{
 background-color: #404bbf;
 }
 
@@ -470,12 +470,13 @@ height: 100%;
     gap: 16px;
 }
 
-.social-list .link {
+.ref {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
+    height: 100%
     border-radius: 50%;
     background-color: #4d5ae5;
     color: #f4f4fd; 
@@ -483,7 +484,7 @@ height: 100%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus {
+.ref:hover,
+.ref:focus {
     background-color: #31d0aa;
 }
